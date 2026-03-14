@@ -10,7 +10,7 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "test-topic", groupId = "my-group1")
     public void consumer1(String message) {
-        System.out.println("Received i am consumer 1: " + message);
+        System.out.println("Received i am consumer 1st: " + message);
     }
 
     @KafkaListener(topics = "test-topic" ,groupId="my-group2")
